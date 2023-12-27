@@ -1,0 +1,39 @@
+.tool-bar {
+    display: flex;
+    align-items: center;
+
+    &__user {
+        background: none;
+        border: none;
+        cursor: pointer;
+
+        img {
+            display: block;
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    &__cart {
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin: 0 8px 0 20px;
+
+        img {
+            display: block;
+            width: 24px;
+            height: 24px;
+        }
+
+    }
+
+    &__price-cart {
+        color: #ffffff;
+        font-family: Rubik;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 18px;
+    }
+}
