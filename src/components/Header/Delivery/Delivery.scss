@@ -6,6 +6,10 @@
     border-radius: 8px;
     background: #2C595D;
 
+    @media (min-width: 900px) and (max-width: 1199px) {
+        width: 180px;
+    }
+
     input {
         border: none;
         display: block;

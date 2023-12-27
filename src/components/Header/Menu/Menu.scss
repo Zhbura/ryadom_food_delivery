@@ -19,7 +19,7 @@
         display: block;
         width: 24px;
 
-        @media (min-width: 375px) and (max-width: 767px) {
+        @media (min-width: 375px) and (max-width: 899px) {
             border-color: #000;
         }
 
@@ -33,7 +33,7 @@
     }
 
     &__text {
-        @media (min-width: 375px) and (max-width: 767px) {
+        @media (min-width: 375px) and (max-width: 1199px) {
             display: none;
         }
     }

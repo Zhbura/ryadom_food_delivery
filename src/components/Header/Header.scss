@@ -1,9 +1,9 @@
 .header-big {
-    @media (min-width: 375px) and (max-width: 767px) {
+    @media (min-width: 375px) and (max-width: 899px) {
         display: none;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 900px) {
         padding: 8px 24px;
         background: rgba(4, 62, 68, 1);
         display: flex;
@@ -18,7 +18,7 @@
 }
 
 .header-small {
-    @media (min-width: 375px) and (max-width: 767px) {
+    @media (min-width: 375px) and (max-width: 899px) {
         display: block;
         background: #fff;
         padding: 14px 16px 26px 16px;
@@ -34,7 +34,7 @@
         }
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 900px) {
         display: none;
     }
 }

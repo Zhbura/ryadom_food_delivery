@@ -7,7 +7,7 @@
         width: 24px;
         height: 24px;
 
-        @media (min-width: 1200px) {
+        @media (min-width: 900px) {
             fill: #fff;
         }
     }
@@ -33,7 +33,7 @@
         font-weight: 500;
         line-height: 18px;
 
-        @media (min-width: 375px) and (max-width: 767px) {
+        @media (min-width: 375px) and (max-width: 899px) {
             color: #000;
         }
     }
