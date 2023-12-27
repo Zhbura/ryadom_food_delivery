@@ -19,52 +19,6 @@
         }
     }
 
-    &__express-delivery {
-        display: flex;
-    }
-
-    &__question-mark {
-        padding: 9px;
-        border-radius: 50px;
-        background: none;
-        position: relative;
-
-        span {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-    }
-
-    &__text {
-        color: #1B1B1B;
-        font-family: Rubik;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 22px;
-        margin: 0 8px;
-    }
-
-    &__btn {
-        border: none;
-        width: 42px;
-        height: 22px;
-        border-radius: 20px;
-        background: #C9C9C9;
-        padding: 2px;
-        margin-right: 8px;
-
-        span {
-            display: block;
-            background: #fff;
-            width: 18px;
-            height: 18px;
-            border-radius: 50px;
-        }
-    }
-
     &__wrap {
         display: flex;
 
