@@ -2,16 +2,20 @@
     display: flex;
     align-items: center;
 
+    svg {
+        display: block;
+        width: 24px;
+        height: 24px;
+
+        @media (min-width: 1200px) {
+            fill: #fff;
+        }
+    }
+
     &__user {
         background: none;
         border: none;
         cursor: pointer;
-
-        img {
-            display: block;
-            width: 24px;
-            height: 24px;
-        }
     }
 
     &__cart {
@@ -19,13 +23,6 @@
         border: none;
         cursor: pointer;
         margin: 0 8px 0 20px;
-
-        img {
-            display: block;
-            width: 24px;
-            height: 24px;
-        }
-
     }
 
     &__price-cart {
@@ -35,5 +32,9 @@
         font-style: normal;
         font-weight: 500;
         line-height: 18px;
+
+        @media (min-width: 375px) and (max-width: 767px) {
+            color: #000;
+        }
     }
 }

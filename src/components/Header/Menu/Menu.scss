@@ -8,10 +8,33 @@
     font-weight: 400;
     line-height: 22px;
 
-    &__img {
+    &__btn {
+        margin-right: 8px;
+        background: none;
+        border: none;
+    }
+
+    &__btn-line {
+        border: 1px solid #fff;
         display: block;
         width: 24px;
-        height: 24px;
-        margin-right: 8px;
+
+        @media (min-width: 375px) and (max-width: 767px) {
+            border-color: #000;
+        }
+
+        &:not(:first-child) {
+            margin-top: 3px;
+        }
+
+        &_short {
+            width: 18px;
+        }
+    }
+
+    &__text {
+        @media (min-width: 375px) and (max-width: 767px) {
+            display: none;
+        }
     }
 }

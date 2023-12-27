@@ -1,16 +1,16 @@
 import "./ToolBar.scss";
-import user from "../../../img/user.svg";
-import cart from "../../../img/cart.svg";
+import { Cart } from "../SVG/Cart";
+import { User } from "../SVG/User";
 
 export const ToolBar = () => {
     return (
         <>
             <div className="tool-bar">
                 <button className="tool-bar__user">
-                    <img src={user} alt="Личный кабинет" />
+                    <User />
                 </button>
                 <button className="tool-bar__cart">
-                    <img src={cart} alt="Корзина" />
+                    <Cart />
                 </button>
                 <p className="tool-bar__price-cart">2800 ₽</p>
             </div>

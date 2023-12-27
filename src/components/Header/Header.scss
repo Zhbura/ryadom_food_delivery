@@ -1,14 +1,40 @@
-.header {
-    padding: 8px 24px;
-    background: rgba(4, 62, 68, 1);
-    display: flex;
-    justify-content: space-between;
+.header-big {
+    @media (min-width: 375px) and (max-width: 767px) {
+        display: none;
+    }
 
-    
+    @media (min-width: 768px) {
+        padding: 8px 24px;
+        background: rgba(4, 62, 68, 1);
+        display: flex;
+        justify-content: space-between;
+    }
 
     &__forms {
         display: flex;
     }
 
-    
+
+}
+
+.header-small {
+    @media (min-width: 375px) and (max-width: 767px) {
+        display: block;
+        background: #fff;
+        padding: 14px 16px 26px 16px;
+
+        &__container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        &__wrap {
+            display: flex;
+        }
+    }
+
+    @media (min-width: 768px) {
+        display: none;
+    }
 }

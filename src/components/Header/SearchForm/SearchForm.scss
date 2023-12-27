@@ -7,12 +7,19 @@
     justify-content: space-between;
     margin-right: 24px;
 
+    @media (min-width: 375px) and (max-width: 767px) {
+        width: 343px;
+        background: #F7F7F7;
+        margin: 0 auto;
+    }
+
     input {
         border: none;
         display: block;
         outline: none;
         width: 98%;
         cursor: pointer;
+        background: none;
 
         &::placeholder {
             color: #B1B1B1;
