@@ -7,6 +7,10 @@
     line-height: 22px;
     margin-left: 40px;
 
+    @media (min-width: 375px) and (max-width: 899px) {
+        display: none;
+    }
+
     span {
         color: #209041;
     }

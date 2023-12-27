@@ -5,9 +5,11 @@ import { TopBar } from './components/TopBar/TopBar';
 function App() {
   return (
     <>
-      <TopBar />
-      <HeaderBig />
-      <HeaderSmall />
+      <div className="wrap-reverse">
+        <TopBar />
+        <HeaderBig />
+        <HeaderSmall />
+      </div>
     </>
   );
 }

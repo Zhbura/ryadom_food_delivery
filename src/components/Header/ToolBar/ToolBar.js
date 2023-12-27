@@ -1,6 +1,6 @@
 import "./ToolBar.scss";
-import { Cart } from "../SVG/Cart";
-import { User } from "../SVG/User";
+import { Cart } from "../../SVG/Cart";
+import { User } from "../../SVG/User";
 
 export const ToolBar = () => {
     return (

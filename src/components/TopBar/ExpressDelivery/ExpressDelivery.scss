@@ -35,6 +35,10 @@
         background: none;
         position: relative;
 
+        @media (min-width: 375px) and (max-width: 899px) {
+            display: none;
+        }
+
         span {
             position: absolute;
             top: 50%;

@@ -1,0 +1,7 @@
+.wrap-reverse {
+    @media (min-width: 375px) and (max-width: 899px) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+}

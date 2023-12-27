@@ -1,9 +1,13 @@
 .top-bar {
-    padding: 4px 5px 13px 5px;
+    padding: 8px 24px;
     background: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (min-width: 375px) and (max-width: 899px) {
+        padding: 0 0 26px 16px;
+    }
 
     &__text {
         color: #000;
@@ -13,6 +17,10 @@
         font-weight: 300;
         line-height: 18px;
 
+        @media (min-width: 375px) and (max-width: 899px) {
+            display: none;
+        }
+
         &:last-child {
             margin-left: 24px;
         }
@@ -20,5 +28,11 @@
 
     &__wrap {
         display: flex;
+    }
+}
+
+.top-bar .logo {
+    @media (min-width: 375px) and (max-width: 899px) {
+        display: none;
     }
 }
