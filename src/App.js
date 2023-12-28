@@ -1,4 +1,5 @@
 import './App.scss';
+import { Footer } from './components/Footer/Footer';
 import { HeaderBig, HeaderSmall } from './components/Header/Header';
 import { TopBar } from './components/TopBar/TopBar';
 
@@ -10,6 +11,7 @@ function App() {
         <HeaderBig />
         <HeaderSmall />
       </div>
+      <Footer />
     </>
   );
 }
