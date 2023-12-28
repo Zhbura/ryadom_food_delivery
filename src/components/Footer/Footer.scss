@@ -54,59 +54,6 @@
         margin-bottom: 8px;
     }
 
-    &__tools {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    &__download-app {
-        display: flex;
-    }
-
-    &__download-items {
-        display: flex;
-        flex-direction: column;
-        margin-left: 24px;
-    }
-
-    &__download-item {
-        background: none;
-        border: none;
-    }
-
-    &__payment-method {
-        // display: flex;
-        margin-left: 116px;
-        align-self: flex-end;
-    }
-
-    &__payment-item {
-        background: none;
-        border: none;
-        margin-right: 16px;
-    }
-
-    &__social-networking {
-        display: flex;
-        align-self: flex-end;
-    }
-
-    &__icon {
-        width: 36px;
-        height: 36px;
-        border-radius: 50%;
-        background: #fff;
-        position: relative;
-        margin-left: 12px;
-
-        span {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: #209041;
-        }
-    }
 }
 
 .footer-background {

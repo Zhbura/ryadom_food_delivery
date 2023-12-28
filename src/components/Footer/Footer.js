@@ -1,18 +1,13 @@
 import "./Footer.scss";
-import qr from "../../img/qr.svg";
-import appstore from "../../img/appstore.svg";
-import googleplay from "../../img/googleplay.svg";
-import mir from "../../img/mir.svg";
-import visa from "../../img/visa.svg";
-import applepay from "../../img/applepay.svg";
-import googlepay from "../../img/googlepay.svg";
-import mastercard from "../../img/mastercard.svg";
-import maestro from "../../img/maestro.svg";
+import { DownloadApp } from "./FooterTools/DownloadApp/DownloadApp";
+import { PaymentMethod } from "./FooterTools/PaymentMethod/PaymentMethod";
+import { SocialNetworking } from "./FooterTools/SocialNetworking/SocialNetworking";
 
 export const Footer = () => {
+
     return (
         <>
-            <div className="footer-background"></div>
+            <div className="footer-background" />
             <div className="footer">
                 <div className="footer__wrap footer__wrap_top">
                     <div className="footer__text">
@@ -49,48 +44,12 @@ export const Footer = () => {
                 </div>
                 <div className="footer__wrap footer__wrap_middle">
                     <h3 className="footer__title">Скачивайте наше приложение!</h3>
-                    <div className="footer__tools">
+                    <div className="footer-tools">
                         <div className="footer__wrap">
-                            <div className="footer__download-app">
-                                <button className="footer__download-item">
-                                    <img src={qr} alt="Сканируй QR-код и скачивай приложение" />
-                                </button>
-                                <div className="footer__download-items">
-                                    <button className="footer__download-item">
-                                        <img src={appstore} alt="Скачай приложение в appstore" />
-                                    </button>
-                                    <button className="footer__download-item">
-                                        <img src={googleplay} alt="Скачай приложение в google play" />
-                                    </button>
-                                </div>
-                            </div>
-                            <div className="footer__payment-method">
-                                <button className="footer__payment-item">
-                                    <img src={mir} alt="Оплатить картой мир" />
-                                </button>
-                                <button className="footer__payment-item">
-                                    <img src={visa} alt="Оплатить картой виза" />
-                                </button>
-                                <button className="footer__payment-item">
-                                    <img src={applepay} alt="Оплатить apple pay" />
-                                </button>
-                                <button className="footer__payment-item">
-                                    <img src={googlepay} alt="Оплатить google pay" />
-                                </button>
-                                <button className="footer__payment-item">
-                                    <img src={maestro} alt="Оплатить картой маэсро" />
-                                </button>
-                                <button className="footer__payment-item">
-                                    <img src={mastercard} alt="Оплатить картой мастеркарт" />
-                                </button>
-                            </div>
+                            <DownloadApp />
+                            <PaymentMethod />
                         </div>
-                        <div className="footer__social-networking">
-                            <div className="footer__icon"><span>f</span></div>
-                            <div className="footer__icon"><span>w</span></div>
-                            <div className="footer__icon"><span>f</span></div>
-                            <div className="footer__icon"><span>w</span></div>
-                        </div>
+                        <SocialNetworking />
                     </div>
                 </div>
                 <div className="footer__wrap footer__wrap_bottom">

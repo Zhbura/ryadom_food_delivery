@@ -1,0 +1,52 @@
+.footer-tools {
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment-method {
+    margin-left: 116px;
+    align-self: flex-end;
+
+    &__item {
+        background: none;
+        border: none;
+        margin-right: 16px;
+    }
+}
+
+.download-app {
+    display: flex;
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        margin-left: 24px;
+    }
+
+    &__item {
+        background: none;
+        border: none;
+    }
+}
+
+.social-networking {
+    display: flex;
+    align-self: flex-end;
+
+    &__icon {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: #fff;
+        position: relative;
+        margin-left: 12px;
+
+        span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #209041;
+        }
+    }
+}
