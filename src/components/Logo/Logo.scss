@@ -1,0 +1,46 @@
+.logo {
+    @media (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+    }
+
+    @media (min-width: 375px) and (max-width: 899px) {
+        margin-right: 16px;
+    }
+
+    &__wrap-img {
+        width: 25px;
+        height: 51px;
+
+        @media (min-width: 375px) and (max-width: 899px) {
+            width: 21px;
+            height: 43px;
+        }
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    &__text {
+        color: #209041;
+        font-family: Rubik;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 18px;
+        margin-left: 4px;
+
+        span {
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+        @media (min-width: 375px) and (max-width: 1199px) {
+            display: none;
+        }
+    }
+}

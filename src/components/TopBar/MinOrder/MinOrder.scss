@@ -1,0 +1,17 @@
+.min-order {
+    color: #ED6B06;
+    font-family: Rubik;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin-left: 40px;
+
+    @media (min-width: 375px) and (max-width: 899px) {
+        display: none;
+    }
+
+    span {
+        color: #209041;
+    }
+}

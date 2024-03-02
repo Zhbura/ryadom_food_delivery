@@ -1,0 +1,42 @@
+.search-form {
+    padding: 4px 8px 4px 12px;
+    width: 482px;
+    border-radius: 8px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 24px;
+
+    @media (min-width: 375px) and (max-width: 1199px) {
+        width: 343px;
+    }
+
+    @media (min-width: 375px) and (max-width: 899px) {
+        background: #F7F7F7;
+        margin: 0 auto;
+    }
+
+    input {
+        border: none;
+        display: block;
+        outline: none;
+        width: 98%;
+        cursor: pointer;
+        background: none;
+
+        &::placeholder {
+            color: #B1B1B1;
+            font-family: Rubik;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 18px;
+        }
+    }
+
+    img {
+        display: block;
+        width: 24px;
+        height: 24px;
+    }
+}
