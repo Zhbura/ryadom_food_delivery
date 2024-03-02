@@ -6,8 +6,19 @@
     &__wrap {
         display: flex;
 
+        @media (min-width: 375px) and (max-width: 899px) {
+            align-items: center;
+        }
+
         &_top {
-            justify-content: space-between;
+            @media (min-width: 900px) {
+                justify-content: space-between;
+
+            }
+
+            @media (min-width: 375px) and (max-width: 899px) {
+                flex-direction: column;
+            }
         }
 
         &_middle {
@@ -24,8 +35,30 @@
             font-weight: 300;
             line-height: 18px;
 
+            @media (min-width:375px) and (max-width: 899px) {
+                flex-direction: column-reverse;
+            }
+
+            p {
+                @media (min-width:375px) and (max-width: 899px) {
+                    margin-top: 16px;
+                }
+
+                @media (min-width: 900px) {
+                    &:last-child {
+                        margin-left: 24px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__titles {
+        @media (min-width:375px) and (max-width: 899px) {
+            display: flex;
+
             p:last-child {
-                margin-left: 24px;
+                margin-left: 16px;
             }
         }
     }
@@ -48,16 +81,41 @@
         font-style: normal;
         font-weight: 400;
         line-height: 22px;
+
+
     }
 
     &__list-item {
         margin-bottom: 8px;
     }
 
+    &__line {
+        display: block;
+        border: 1px solid #fff;
+        margin: 48px 16px;
+        opacity: 0.2;
+
+        @media (min-width: 900px) {
+            display: none;
+        }
+    }
+
+    &__agreements {
+        display: flex;
+
+        @media (min-width: 375px) and (max-width: 899px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 }
 
 .footer-background {
-    height: 114px;
+    height: 60px;
     background-image: url(../../img/backgroundimg.png);
     background-size: cover;
+
+    @media (min-width: 1199px) {
+        height: 114px;
+    }
 }

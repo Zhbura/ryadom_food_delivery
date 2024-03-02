@@ -35,26 +35,30 @@ export const Footer = () => {
                         </ul>
                     </div>
                     <div className="footer__text">
-                        <p className="footer__title">+7 499 653 67 66</p>
-                        <p className="footer__title">+7 977 853 38 15</p>
+                        <div className="footer__titles">
+                            <p className="footer__title">+7 499 653 67 66</p>
+                            <p className="footer__title">+7 977 853 38 15</p>
+                        </div>
                         <ul className="footer__list">
                             <li className="footer__list-item">Ежедневно с 06:00 – 00:00</li>
                         </ul>
                     </div>
                 </div>
+                <span className="footer__line" />
                 <div className="footer__wrap footer__wrap_middle">
                     <h3 className="footer__title">Скачивайте наше приложение!</h3>
                     <div className="footer-tools">
-                        <div className="footer__wrap">
+                        <div className="footer-tools__wrap">
                             <DownloadApp />
                             <PaymentMethod />
                         </div>
+                        <span className="footer__line" />
                         <SocialNetworking />
                     </div>
                 </div>
                 <div className="footer__wrap footer__wrap_bottom">
-                    <p>	&#169; 2019-2021 – Рядом</p>
-                    <div className="footer__wrap">
+                    <p className="footer__copyright">	&#169; 2019-2021 – Рядом</p>
+                    <div className="footer__agreements">
                         <p>Оферта</p>
                         <p>Политика конфиденциальности</p>
                     </div>

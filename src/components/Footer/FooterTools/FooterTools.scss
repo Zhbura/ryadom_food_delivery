@@ -1,11 +1,31 @@
 .footer-tools {
     display: flex;
     justify-content: space-between;
+
+    @media (min-width: 375px) and (max-width: 899px) {
+        flex-direction: column;
+    }
+
+    &__wrap {
+        display: flex;
+
+        @media (min-width: 375px) and (max-width: 899px) {
+            flex-direction: column;
+        }
+    }
 }
 
 .payment-method {
-    margin-left: 116px;
-    align-self: flex-end;
+    @media (min-width: 375px) and (max-width: 899px) {
+        align-self: center;
+        margin-top: 24px;
+    }
+
+    @media (min-width: 900px) {
+        align-self: flex-end;
+        margin-left: 116px;
+
+    }
 
     &__item {
         background: none;
@@ -17,21 +37,44 @@
 .download-app {
     display: flex;
 
+    @media (min-width: 375px) and (max-width: 899px) {
+        align-self: center;
+    }
+
     &__items {
         display: flex;
-        flex-direction: column;
-        margin-left: 24px;
+
+        @media (min-width: 900px) {
+            flex-direction: column;
+            margin-left: 24px;
+        }
     }
 
     &__item {
         background: none;
         border: none;
+
+        &_hidden {
+            @media (min-width: 375px) and (max-width: 899px) {
+                display: none;
+            }
+        }
+
+        &_left {
+            @media (min-width: 375px) and (max-width: 899px) {
+                margin-right: 16px;
+            }
+        }
     }
 }
 
 .social-networking {
     display: flex;
-    align-self: flex-end;
+    align-self: center;
+
+    @media (min-width: 900px) {
+        align-self: flex-end;
+    }
 
     &__icon {
         width: 36px;
